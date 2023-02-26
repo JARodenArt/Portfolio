@@ -1,0 +1,484 @@
+/*Hello*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+html{
+font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+vertical-align: baseline;
+background-color: white;
+}
+
+
+/* HEADING */
+
+/* Makes the header stick to the top of the page */
+nav{
+  width:100%;
+
+}
+
+/* Nav Link Styling */
+nav a{
+  color:rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+nav a:link{
+  color:rgb(0, 0, 0);
+  
+}
+
+nav a:visited{
+  color:rgb(0, 0, 0);
+  
+}
+
+nav a:hover{
+  color:rgb(0, 0, 0);
+  
+}
+
+nav a:active{
+  color:rgb(0, 0, 0);
+
+}
+
+h1{
+  font-family: "lores-12", sans-serif;
+  font-size: 5rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Creates and style the hamburger menu icon, Changes display on screen size */
+.icon{
+  background: black;
+  display: none;
+  position: absolute;
+  border-radius: 25%;
+  padding: 1.25rem;
+  right: .75rem;
+  top: .75rem;
+
+}
+
+/* Modifies the Navbar for medium to large screens */
+.horizontal {
+  background-color: rgb(189, 189, 189);
+  display:flex;
+  flex-direction: row;
+  justify-content: right;
+  padding: 1rem 1rem;
+  flex:1;
+  list-style: none;
+}
+
+.horizontal a{
+  font-family: "lores-12", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-style: normal;
+
+  border: .2rem solid;
+  border-color: black;
+  text-decoration: none;
+  
+  display:flex;
+  flex-direction: row;
+  padding: .5rem;
+  margin: 0rem 1rem 0rem 1rem;
+  
+}
+
+
+
+.active{
+  font-family: "video", serif;
+font-weight: 700;
+font-style: normal;
+font-size: 1.5rem;
+
+  float:left;
+  text-decoration: none;
+  display:block;
+  padding: 1.5rem 1rem;
+ 
+}
+
+.logo{
+  padding: none;
+  width:7rem;
+}
+
+.navbar{
+  background-color: rgb(126, 126, 126);
+}
+
+.horizontal a:hover{
+  background-color: rgb(114, 114, 114);
+}
+
+/* BODY */
+
+main{
+  padding-top:3rem;
+  margin: 0rem 1rem 12rem 1rem;
+
+}
+
+.center{
+  text-align: center;
+
+}
+
+.about{
+  background-color: blue;
+  padding: 10rem 0rem;
+  margin-bottom: 5rem;
+  
+}
+
+
+/* Portfolio Grid*/
+.portfolio{
+  justify-content: space-evenly;
+
+}
+
+img{
+  width: 100%;
+}
+
+div{
+  height: min-content;
+}
+
+.container{
+  list-style: none;
+  
+}
+
+.container a{
+  height:10rem;
+  display: block;
+  text-decoration: none;
+}
+
+.container div{
+  height:10rem;
+  
+  transition: all .2s ease-in-out;
+}
+
+.container div:hover{
+  transform: scale(1.05);
+}
+
+/* 3D Thumbnails */
+#credits a{
+  background-image: url("img/Credit_Thumbnail.jpg");
+  background-position: center;
+}
+
+#credits a:hover{
+  background-image: url("gif/MovieCredits.gif");
+  
+}
+
+#head a{
+  background-image: url("img/Head_Thumbnail.jpg");
+  background-position: center;
+}
+
+#head a:hover{
+  background-image: url("gif/Head_Gif.gif");
+  
+}
+
+#arcade a{
+  background-image: url("img/Arcade_Thumbnail.jpg");
+  background-position: center;
+}
+
+
+/* Illustration Thumnails */
+#fest a{
+  background-image: url("img/KaijuFest_Thumbnail.png");
+  background-position: center;
+}
+
+
+.container img{
+  z-index: 1;
+}
+
+/* H2 Image Text*/
+.imageText{
+  position: relative;
+  top: 8rem;
+  left:2rem;
+  color: white;
+  text-decoration: none;
+  padding: 0rem 1rem;
+  z-index: 10;
+
+  visibility: hidden;
+}
+
+/* On Hover make image Title visible */
+.container div a:hover .imageText{
+  transition: all .2s ease-in-out;
+  transform: translate(0, -1rem);
+  visibility: visible;
+}
+
+/* Section End */
+
+.button{
+  
+  background-color: gray;
+  color: black;
+  padding: 1rem;
+  float: right;
+  margin: 6rem 1rem 0rem 0rem;
+}
+
+/* FOOTER */
+
+footer{
+  padding: 3rem 1.5rem;
+  
+  color:rgb(0, 0, 0);
+}
+
+footer ul{
+  list-style: none;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+/* Footer Link Styling */
+footer a{
+  color:rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+footer a:link{
+  color:rgb(0, 0, 0);
+  
+}
+
+footer a:visited{
+  color:rgb(0, 0, 0);
+  
+}
+
+footer a:hover{
+  color:rgb(0, 0, 0);
+  
+}
+
+footer a:active{
+  color:rgb(0, 0, 0);
+
+}
+
+/* SECTION ENDS */
+
+
+
+
+
+
+
+
+
+/* --- Phone Screen Size --- */
+@media screen and (max-width:37.5rem) {
+  nav{
+    width:100%;
+    position: fixed;
+  }
+  
+
+  .icon{
+    display:block;
+  }
+
+  .horizontal {
+    padding: 0rem;
+    display:none;
+    
+  }
+
+
+  .horizontal.vertical{
+    position: absolute;
+    right:0;
+    display:flex;
+    flex-direction: column;
+    
+  }
+
+  .horizontal.vertical a{
+    border: none;
+    border-radius: 0;
+    padding: 1.5rem 1rem;
+    margin: 0 auto;
+  }
+
+  .active{
+    float: none;
+    text-decoration: none;
+    display:block;
+  }
+
+  main{
+    padding-top: 6rem;
+    margin: 0rem 1rem;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns:  repeat(1, 1fr);
+    grid-gap: 1rem;
+  
+  }
+
+  footer{
+    padding: 1rem 1.5rem;
+  }
+
+}
+
+/* SECTION ENDS */
+
+
+
+
+
+
+
+
+
+
+
+/* Tablet Screen Size */
+@media screen and (min-width:37.5rem){
+.horizontal {
+  background-color: rgb(126, 126, 126);
+}
+
+.horizontal a{
+  background-color: rgb(124, 168, 197);
+}
+
+.container {
+  
+  grid-template-columns:  repeat(2, 2fr);
+  grid-gap: 1rem;
+
+}
+
+}
+
+/* Section Ends */
+
+/* Desktop Screen Size */
+@media screen and (min-width:60rem){
+
+  .container {
+    
+    grid-template-columns:  repeat(3, 1fr);
+    grid-gap: 1rem;
+  
+  }
+
+}
+
+
+
+/* Retina Display 
+@media screen and (min-device-pixel-ratio: 1.5),
+  only screen and (min-resolution: 192dpi){
+    nav{
+      width:100%;
+      position: fixed;
+    }
+    
+    .navbar{
+      padding:.1rem;
+    }
+  
+    .icon{
+      display:block;
+      padding: 3rem;
+      right: 3rem;
+      top: 3rem;
+    }
+  
+    .horizontal {
+      padding: 0rem;
+      display:none;
+      
+    }
+  
+  
+    .horizontal.vertical{
+      position: absolute;
+      right:0;
+      display:flex;
+      flex-direction: column;
+  
+    }
+  
+    .horizontal.vertical a{
+      border: none;
+      border-radius: 0;
+      padding: 2.5rem 1.5rem;
+      margin: 0 auto;
+      font-size: 3rem;
+    }
+  
+    .active{
+      float: none;
+      text-decoration: none;
+      display:block;
+      padding: 4rem;
+      font-size: 4rem;
+    }
+  
+    main{
+      padding-top: 5rem;
+      margin: 0rem 1rem;
+    }
+    
+    .container {
+      display: grid;
+      grid-template-columns:  repeat(1, 1fr);
+      grid-gap: 1rem;
+    
+    }
+
+    img{
+      width: 100%;
+      padding: 5rem;
+    }    
+  
+    footer{
+      padding: 1rem 1.5rem;
+    }
+
+  }
+  */
+  
