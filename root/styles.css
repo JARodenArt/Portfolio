@@ -1,5 +1,3 @@
-/*Hello*/
-
 * {
   margin: 0;
   padding: 0;
@@ -208,6 +206,20 @@ div{
   background-position: center;
 }
 
+#arcade a:hover{
+  background-image: url("gif/Arcade_Gif.gif");
+  
+}
+
+#greet a{
+  background-image: url("img/Greetings_Thumbnail.jpg");
+  background-position: center;
+}
+
+#greet a:hover{
+  background-image: url("gif/Greetings_Gif.gif");
+  
+}
 
 /* Illustration Thumnails */
 #fest a{
