@@ -154,6 +154,7 @@ main{
 
 img{
   width: 100%;
+  position: relative;
 }
 
 div{
@@ -166,14 +167,11 @@ div{
 }
 
 .container a{
-  height:10rem;
   display: block;
   text-decoration: none;
 }
 
 .container div{
-  height:10rem;
-  
   transition: all .2s ease-in-out;
 }
 
@@ -183,18 +181,21 @@ div{
 
 /* 3D Thumbnails */
 
-#credits{
-  display: block;
+#credits a{
+  background-image: url("img/Credit_Thumbnail.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #credits a:hover img{
-  display: none;
-  
+  visibility: hidden;
 }
 
 #credits a:hover{
   background-image: url("gif/MovieCredits.gif");
-  background-position: center;
+  
+  
 }
 
 #head a{
@@ -233,17 +234,15 @@ div{
   background-position: center;
 }
 
-
 .container img{
   z-index: 1;
 }
 
 /* H2 Image Text*/
 .imageText{
-  position: relative;
-  top: 8rem;
-  left:2rem;
-  color: white;
+  position: absolute;
+  bottom: .25rem;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   padding: 0rem 1rem;
   z-index: 10;
@@ -254,7 +253,7 @@ div{
 /* On Hover make image Title visible */
 .container div a:hover .imageText{
   transition: all .2s ease-in-out;
-  transform: translate(0, -1rem);
+  transform: translate(1rem, -1rem);
   visibility: visible;
 }
 
@@ -367,9 +366,7 @@ footer a:active{
   }
 
   .container {
-    display: grid;
-    grid-template-columns:  repeat(1, 1fr);
-    grid-gap: 1rem;
+   
   
   }
 
