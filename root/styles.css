@@ -16,40 +16,6 @@ overflow-x: hidden;
 }
 
 
-/* HEADING */
-
-/* Makes the header stick to the top of the page */
-nav{
-  width:100%;
-
-}
-
-/* Nav Link Styling */
-nav a{
-  color:rgb(0, 0, 0);
-  text-decoration: none;
-}
-
-nav a:link{
-  color:rgb(0, 0, 0);
-  
-}
-
-nav a:visited{
-  color:rgb(0, 0, 0);
-  
-}
-
-nav a:hover{
-  color:rgb(0, 0, 0);
-  
-}
-
-nav a:active{
-  color:rgb(0, 0, 0);
-
-}
-
 h1{
   font-family: "lores-12", sans-serif;
   font-size: 5rem;
@@ -57,79 +23,13 @@ h1{
   font-style: normal;
 }
 
-/* Creates and style the hamburger menu icon, Changes display on screen size */
-.icon{
-  background: black;
-  display: none;
-  position: absolute;
-  border-radius: 25%;
-  padding: 1.25rem;
-  right: .75rem;
-  top: .75rem;
 
-}
-
-/* Modifies the Navbar for medium to large screens */
-.horizontal {
-  background-color: rgb(189, 189, 189);
-  display:flex;
-  flex-direction: row;
-  justify-content: right;
-  padding: 1rem 1rem;
-  flex:1;
-  list-style: none;
-}
-
-.horizontal a{
-  font-family: "lores-12", sans-serif;
-  font-size: 1.25rem;
-  font-weight: 700;
-  font-style: normal;
-
-  border: .2rem solid;
-  border-color: black;
-  text-decoration: none;
-  
-  display:flex;
-  flex-direction: row;
-  padding: .5rem;
-  margin: 0rem 1rem 0rem 1rem;
-  
-}
-
-
-
-.active{
-  font-family: "video", serif;
-font-weight: 700;
-font-style: normal;
-font-size: 1.5rem;
-
-  float:left;
-  text-decoration: none;
-  display:block;
-  padding: 1.5rem 1rem;
- 
-}
-
-.logo{
-  padding: none;
-  width:7rem;
-}
-
-.navbar{
-  background-color: rgb(126, 126, 126);
-}
-
-.horizontal a:hover{
-  background-color: rgb(114, 114, 114);
-}
 
 /* BODY */
 
 main{
   padding-top:3rem;
-  margin: 0rem 1rem 12rem 1rem;
+  margin: 0rem 0rem 12rem 0rem;
 
 }
 
@@ -167,12 +67,13 @@ div{
 }
 
 .container a{
-  display: block;
+  display: flex;
   text-decoration: none;
 }
 
 .container div{
   transition: all .2s ease-in-out;
+  
 }
 
 .container div:hover{
@@ -181,12 +82,6 @@ div{
 
 /* 3D Thumbnails */
 
-#credits a{
-  
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
 
 #credits a:hover img{
   visibility: hidden;
@@ -194,18 +89,23 @@ div{
 
 #credits a:hover{
   background-image: url("gif/MovieCredits.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   
   
 }
 
-#head a{
-  background-image: url("img/Head_Thumbnail.jpg");
-  background-position: center;
+
+#head a:hover img{
+  visibility: hidden;
 }
 
 #head a:hover{
   background-image: url("gif/Head_Gif.gif");
-  
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #arcade a{
@@ -241,8 +141,9 @@ div{
 /* H2 Image Text*/
 .imageText{
   position: absolute;
+  left: 1rem;
   bottom: .25rem;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   text-decoration: none;
   padding: 0rem 1rem;
   z-index: 10;
@@ -316,57 +217,15 @@ footer a:active{
 
 
 
-
-
-
-
 /* --- Phone Screen Size --- */
 @media screen and (max-width:37.5rem) {
-  nav{
-    width:100%;
-    position: fixed;
-  }
-  
-
-  .icon{
-    display:block;
-  }
-
-  .horizontal {
-    padding: 0rem;
-    display:none;
-    
-  }
-
-
-  .horizontal.vertical{
-    position: absolute;
-    right:0;
-    display:flex;
-    flex-direction: column;
-    
-  }
-
-  .horizontal.vertical a{
-    border: none;
-    border-radius: 0;
-    padding: 1.5rem 1rem;
-    margin: 0 auto;
-  }
-
-  .active{
-    float: none;
-    text-decoration: none;
-    display:block;
-  }
 
   main{
     padding-top: 6rem;
-    margin: 0rem 1rem;
+    margin: 0rem 0rem;
   }
 
   .container {
-   
   
   }
 
@@ -380,28 +239,13 @@ footer a:active{
 
 
 
-
-
-
-
-
-
-
-
 /* Tablet Screen Size */
 @media screen and (min-width:37.5rem){
-.horizontal {
-  background-color: rgb(126, 126, 126);
-}
 
-.horizontal a{
-  background-color: rgb(124, 168, 197);
-}
 
 .container {
   
-  grid-template-columns:  repeat(2, 2fr);
-  grid-gap: 1rem;
+  
 
 }
 
@@ -414,11 +258,13 @@ footer a:active{
 
   .container {
     
-    grid-template-columns:  repeat(3, 1fr);
-    grid-gap: 1rem;
+   
   
   }
 
+  main{
+    background-color: rgb(255, 0, 200);
+}
 }
 
 
