@@ -43,7 +43,7 @@ nav a{
     display: none;
     position: absolute;
     border-radius: 25%;
-    padding: 1.25rem;
+    padding: 1.5rem;
     right: .75rem;
     top: .75rem;
   
@@ -81,24 +81,22 @@ nav a{
   
   .active{
     font-family: "video", serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 1.5rem;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5rem;
   
     float:left;
     text-decoration: none;
     display:block;
-    padding: 1.5rem 1rem;
+    padding: .5rem .5rem;
+    width:8rem;
    
   }
   
-  .logo{
-    padding: none;
-    width:7rem;
-  }
+  
   
   .navbar{
-    background-color: rgb(126, 126, 126);
+    background-color: rgb(255, 255, 255);
   }
   
   .horizontal a:hover{
@@ -159,7 +157,7 @@ nav a{
 
     
     .horizontal {
-      background-color: rgb(126, 126, 126);
+      background-color: rgb(255, 255, 255);
     }
     
     .horizontal a{
