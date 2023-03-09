@@ -1,0 +1,112 @@
+
+
+
+/* --- Phone Screen Size --- */
+@media screen and (max-width:37.5rem) {
+
+    main{
+      padding-top: 6rem;
+      
+    }
+    .profile{
+    
+        width: 17rem;
+        margin: 0;
+    }
+
+    .bio{
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+     
+     }
+
+     h1{
+        font-size: 4rem;
+        align-self:center;
+        margin: auto;
+        margin: 0 auto;
+        
+     }
+
+    div p{
+        margin: 0 auto;
+        width:25rem;
+    }
+    
+  
+    
+    footer{
+      padding: 1rem 1.5rem;
+    }
+  
+  }
+
+  
+/* Tablet Screen Size */
+@media screen and (min-width:37.5rem){
+
+    
+      .profile{
+        margin-right: 3rem;
+          width: 15rem;
+          
+      }
+  
+      .bio{
+          display:flex;
+          justify-content: center;
+          align-items: center;
+       
+       }
+  
+       h1{
+          font-size: 3rem;
+          align-self:center;
+          margin: auto;
+          
+       }
+  
+       div p{
+        margin: 2rem 0;
+          width:25rem;
+      }
+    }
+
+
+
+/* Desktop Screen Size */
+@media screen and (min-width:60rem){
+
+    .profile{
+    
+        width: 20rem;
+        margin-right: 3rem;
+    }
+    
+    .bio{
+       display:flex;
+       justify-content: center;
+       flex-direction: row;
+    
+    }
+    
+    main{
+        padding:3rem 2rem;
+    }
+    
+    div{
+        align-items: center;
+    }
+    
+    h1{}
+    
+    div p{
+        
+        width:30rem;
+    }
+  
+  
+  }
+  

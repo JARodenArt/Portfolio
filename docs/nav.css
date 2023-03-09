@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+  }
+
+  /* HEADING */
+
+/* Makes the header stick to the top of the page */
+nav{
+    width:100%;
+
+  }
+
+  /* Nav Link Styling */
+nav a{
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  
+  nav a:link{
+    color:rgb(0, 0, 0);
+    
+  }
+  
+  nav a:visited{
+    color:rgb(0, 0, 0);
+    
+  }
+  
+  nav a:hover{
+    color:rgb(0, 0, 0);
+    
+  }
+  
+  nav a:active{
+    color:rgb(0, 0, 0);
+  
+  }
+
+  /* Creates and style the hamburger menu icon, Changes display on screen size */
+.icon{
+    background: black;
+    display: none;
+    position: absolute;
+    border-radius: 25%;
+    padding: 1.5rem;
+    right: .75rem;
+    top: .4rem;
+  
+  }
+  
+  /* Modifies the Navbar for medium to large screens */
+  .horizontal {
+    background-color: rgb(189, 189, 189);
+    display:flex;
+    flex-direction: row;
+    justify-content: right;
+    padding: 1rem 1rem;
+    flex:1;
+    list-style: none;
+  }
+  
+  .horizontal a{
+    font-family: "lores-12", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    font-style: normal; 
+    text-decoration: none;
+    display:flex;
+    flex-direction: row;
+    padding: .5rem;
+    margin: 0rem 1rem 0rem 1rem;
+    
+  }
+  
+  
+  
+  .active{
+    font-family: "geom-graphic", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5rem;
+  
+    float:left;
+    text-decoration: none;
+    display:block;
+    margin: .25rem;
+    padding:1rem;
+    
+    
+   
+  }
+  
+  
+  
+  .navbar{
+    background-color: rgb(255, 255, 255);
+    
+  }
+  
+  .horizontal a:hover{
+    background-color: rgb(190, 190, 190);
+  }
+
+
+  /* --- Phone Screen Size --- */
+@media screen and (max-width:37.5rem) {
+    nav{
+      width:100%;
+      position: absolute;
+    }
+    
+  
+    .icon{
+      display:block;
+    }
+  
+    .horizontal {
+      display:none;
+      padding:0;
+      
+    }
+
+  
+    .horizontal.vertical{
+      position: absolute;
+      right:0;
+      top:3.75rem;
+      display:flex;
+      flex-direction: column;
+
+      z-index: 2;
+    }
+  
+    .horizontal.vertical a{
+      border: 2px;
+      border-style: ridge;
+      padding: 1.5rem 1rem;
+      margin: 0 auto;
+    }
+  
+    .active{
+      float: none;
+      text-decoration: none;
+      display:block;
+      margin: 0rem .5rem .5rem .5rem;
+    }
+
+
+}
+
+    /* Tablet Screen Size */
+@media screen and (min-width:37.5rem){
+
+
+    
+    .horizontal {
+      background-color: rgb(255, 255, 255);
+    }
+    
+    .horizontal a{
+      
+    }
+
+ 
+
+}
