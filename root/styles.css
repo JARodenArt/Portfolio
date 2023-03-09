@@ -17,19 +17,34 @@ overflow-x: hidden;
 
 
 h1{
-  font-family: "lores-12", sans-serif;
+  
   font-size: 5rem;
-  font-weight: 400;
+  
+  font-family: "geom-graphic", sans-serif;
+  font-weight: 700;
   font-style: normal;
+}
+
+h2{
+  
+    font-family: "lores-12", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    font-style: normal;
+  
 }
 
 
 
 /* BODY */
+body{
+  background-color: rgb(243, 243, 243);
+}
+
 
 main{
   padding-top:3rem;
-  margin: 0rem 0rem 12rem 0rem;
+  
 
 }
 
@@ -39,10 +54,16 @@ main{
 }
 
 .about{
-  background-color: blue;
+  background-color: rgb(0, 247, 255);
   padding: 10rem 0rem;
   margin-bottom: 5rem;
   
+}
+
+.portfolio{
+  background-color: rgb(0, 38, 255);
+  padding: 10rem 0rem;
+  margin-bottom: 5rem;
 }
 
 
@@ -79,6 +100,11 @@ div{
 .container div:hover{
   transform: scale(1.05);
 }
+
+.container h1{
+  margin-left: 2rem;
+}
+
 
 /* 3D Thumbnails */
 
@@ -168,6 +194,10 @@ div{
   float: right;
   margin: 6rem 1rem 0rem 0rem;
 }
+.button a{
+  color: white;
+  text-decoration: none;
+}
 
 /* FOOTER */
 
@@ -225,10 +255,7 @@ footer a:active{
     margin: 0rem 0rem;
   }
 
-  .container {
   
-  }
-
   footer{
     padding: 1rem 1.5rem;
   }
@@ -243,11 +270,6 @@ footer a:active{
 @media screen and (min-width:37.5rem){
 
 
-.container {
-  
-  
-
-}
 
 }
 
@@ -256,15 +278,8 @@ footer a:active{
 /* Desktop Screen Size */
 @media screen and (min-width:60rem){
 
-  .container {
-    
-   
-  
-  }
 
-  main{
-    background-color: rgb(255, 0, 200);
-}
+
 }
 
 
