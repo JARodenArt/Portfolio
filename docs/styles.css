@@ -18,8 +18,7 @@ overflow-x: hidden;
 
 h1{
   
-  font-size: 5rem;
-  
+  font-size: 3rem;
   font-family: "geom-graphic", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -28,7 +27,7 @@ h1{
 h2{
   
     font-family: "lores-12", sans-serif;
-    font-size: 2rem;
+    font-size: 1.25rem;
     font-weight: 700;
     font-style: normal;
   
@@ -53,25 +52,6 @@ main{
 
 }
 
-.about{
-  background-color: rgb(0, 247, 255);
-  padding: 10rem 0rem;
-  margin-bottom: 5rem;
-  
-}
-
-.portfolio{
-  background-color: rgb(0, 38, 255);
-  padding: 10rem 0rem;
-  margin-bottom: 5rem;
-}
-
-
-/* Portfolio Grid*/
-.portfolio{
-  justify-content: space-evenly;
-
-}
 
 img{
   width: 100%;
@@ -102,63 +82,11 @@ div{
 }
 
 .container h1{
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 
 
-/* 3D Thumbnails */
 
-
-#credits a:hover img{
-  visibility: hidden;
-}
-
-#credits a:hover{
-  background-image: url("gif/MovieCredits.gif");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  
-  
-}
-
-
-#head a:hover img{
-  visibility: hidden;
-}
-
-#head a:hover{
-  background-image: url("gif/Head_Gif.gif");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-#arcade a{
-  background-image: url("img/Arcade_Thumbnail.jpg");
-  background-position: center;
-}
-
-#arcade a:hover{
-  background-image: url("gif/Arcade_Gif.gif");
-  
-}
-
-#greet a{
-  background-image: url("img/Greetings_Thumbnail.jpg");
-  background-position: center;
-}
-
-#greet a:hover{
-  background-image: url("gif/Greetings_Gif.gif");
-  
-}
-
-/* Illustration Thumnails */
-#fest a{
-  background-image: url("img/KaijuFest_Thumbnail.png");
-  background-position: center;
-}
 
 .container img{
   z-index: 1;
@@ -167,8 +95,8 @@ div{
 /* H2 Image Text*/
 .imageText{
   position: absolute;
-  left: 1rem;
-  bottom: .25rem;
+  left: .1rem;
+  bottom: .3rem;
   color: rgb(255, 255, 255);
   text-decoration: none;
   padding: 0rem 1rem;
@@ -178,13 +106,11 @@ div{
 }
 
 /* On Hover make image Title visible */
-.container div a:hover .imageText{
-  transition: all .2s ease-in-out;
-  transform: translate(1rem, -1rem);
-  visibility: visible;
-}
+
 
 /* Section End */
+
+
 
 .button{
   
@@ -192,7 +118,7 @@ div{
   color: black;
   padding: 1rem;
   float: right;
-  margin: 6rem 1rem 0rem 0rem;
+  /*margin: 6rem 1rem 0rem 0rem;*/
 }
 .button a{
   color: white;
@@ -202,8 +128,7 @@ div{
 /* FOOTER */
 
 footer{
-  padding: 3rem 1.5rem;
-  
+  padding: 10rem 1.5rem 3rem 1.5rem;
   color:rgb(0, 0, 0);
 }
 
@@ -250,6 +175,16 @@ footer a:active{
 /* --- Phone Screen Size --- */
 @media screen and (max-width:37.5rem) {
 
+
+
+
+  .container h1{
+    margin-left: 1rem;
+  }
+
+
+  
+
   main{
     padding-top: 6rem;
     margin: 0rem 0rem;
@@ -269,7 +204,72 @@ footer a:active{
 /* Tablet Screen Size */
 @media screen and (min-width:37.5rem){
 
+  h1{
+    font-size: 4rem;
+  }
 
+ 
+
+  /* 3D Thumbnails */
+
+
+#credits a:hover img{
+  visibility: hidden;
+}
+
+#credits a:hover{
+  background-image: url("gif/MovieCredits.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+
+#head a:hover img{
+  visibility: hidden;
+}
+
+#head a:hover{
+  background-image: url("gif/Head_Gif.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#arcade a:hover img{
+  visibility: hidden;
+}
+
+#arcade a:hover{
+  background-image: url("gif/Arcade_Gif.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+
+#greet a:hover img{
+  visibility: hidden;
+}
+
+#greet a:hover{
+  background-image: url("gif/Greetings_Gif.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Illustration Thumnails */
+#fest a{
+  background-image: url("img/KaijuFest_Thumbnail.png");
+  background-position: center;
+}
+
+.container div a:hover .imageText{
+  transition: all .2s ease-in-out;
+  transform: translate(1rem, -1rem);
+  visibility: visible;
+}
 
 }
 
@@ -278,8 +278,59 @@ footer a:active{
 /* Desktop Screen Size */
 @media screen and (min-width:60rem){
 
+  h1{
+    font-size: 5rem;
+  }
+
+  h2{
+    font-size: 2rem;
+  }
+
+  .imageText{
+    left: 1.5rem;
+    bottom: .25rem;
+    
+  }
 
 
+  .left{
+    float:left;
+    padding: 2.5rem;
+    text-align: center;
+  
+  }
+  
+  .left img{
+    width: 27.25rem;
+    
+    margin: auto;
+  }
+  
+  .about{
+    background-color: rgb(182, 182, 182);
+    padding: 10rem 0rem;
+    align-items: center;
+    margin-bottom: 5rem;
+    
+  }
+  
+  #aboutText{
+    padding: 0 5rem 0rem 35rem;
+      text-align: center;
+  }
+  
+  .portfolio{
+    background-color: rgb(182, 182, 182);
+    padding: 10rem 0rem;
+    margin-bottom: 5rem;
+  }
+
+  .buttonArray{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+  }
+ 
 }
 
 

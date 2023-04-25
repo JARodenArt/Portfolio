@@ -52,21 +52,6 @@ main{
 
 }
 
-.about{
-  background-color: rgb(182, 182, 182);
-  padding: 10rem 0rem;
-  margin-bottom: 5rem;
-  
-}
-
-.portfolio{
-  background-color: rgb(182, 182, 182);
-  padding: 10rem 0rem;
-  margin-bottom: 5rem;
-}
-
-
-
 
 img{
   width: 100%;
@@ -125,13 +110,15 @@ div{
 
 /* Section End */
 
+
+
 .button{
   
   background-color: gray;
   color: black;
   padding: 1rem;
   float: right;
-  margin: 6rem 1rem 0rem 0rem;
+  /*margin: 6rem 1rem 0rem 0rem;*/
 }
 .button a{
   color: white;
@@ -249,24 +236,27 @@ footer a:active{
   background-position: center;
 }
 
-#arcade a{
-  background-image: url("img/Arcade_Thumbnail.jpg");
-  background-position: center;
+#arcade a:hover img{
+  visibility: hidden;
 }
 
 #arcade a:hover{
   background-image: url("gif/Arcade_Gif.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   
 }
 
-#greet a{
-  background-image: url("img/Greetings_Thumbnail.jpg");
-  background-position: center;
+#greet a:hover img{
+  visibility: hidden;
 }
 
 #greet a:hover{
   background-image: url("gif/Greetings_Gif.gif");
-  
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* Illustration Thumnails */
@@ -303,7 +293,43 @@ footer a:active{
   }
 
 
+  .left{
+    float:left;
+    padding: 2.5rem;
+    text-align: center;
+  
+  }
+  
+  .left img{
+    width: 27.25rem;
+    
+    margin: auto;
+  }
+  
+  .about{
+    background-color: rgb(182, 182, 182);
+    padding: 10rem 0rem;
+    align-items: center;
+    margin-bottom: 5rem;
+    
+  }
+  
+  #aboutText{
+    padding: 0 5rem 0rem 35rem;
+      text-align: center;
+  }
+  
+  .portfolio{
+    background-color: rgb(182, 182, 182);
+    padding: 10rem 0rem;
+    margin-bottom: 5rem;
+  }
 
+  .buttonArray{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+  }
  
 }
 
