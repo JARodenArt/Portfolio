@@ -340,13 +340,12 @@ footer a:active{
 
   .left{
     float:left;
-    padding: 2.5rem;
     text-align: center;
   
   }
   
   .left img{
-    width: 27.25rem;
+    width: 35rem;
     margin: auto;
   }
   
@@ -411,8 +410,6 @@ footer a:active{
     .about p{
       font-size: 1.5rem;
     }
-
-  
 
     footer{
       
