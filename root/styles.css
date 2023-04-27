@@ -11,7 +11,7 @@ padding: 0;
 border: 0;
 font-size: 100%;
 vertical-align: baseline;
-background-color: white;
+background-color: rgb(243, 243, 243);
 overflow-x: hidden;
 }
 
@@ -37,6 +37,9 @@ h2{
 
 /* BODY */
 body{
+  min-height: 100vh;  
+  display: flex;
+  flex-direction: column;
   background-color: rgb(243, 243, 243);
 }
 
@@ -49,7 +52,8 @@ main{
 
 .center{
   text-align: center;
-
+  
+  
 }
 
 
@@ -101,7 +105,6 @@ div{
   text-decoration: none;
   padding: 0rem 1rem;
   z-index: 10;
-
   visibility: hidden;
 }
 
@@ -110,26 +113,62 @@ div{
 
 /* Section End */
 
-
+.series{
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  width: 25%;
+}
 
 .button{
   
   background-color: gray;
   color: black;
-  padding: 1rem;
   float: right;
-  /*margin: 6rem 1rem 0rem 0rem;*/
+  
 }
 .button a{
   color: white;
   text-decoration: none;
+
+  display: block;
+  font-size: 1.25rem;
+  padding: 1rem;
+  width:10rem;
+  
+}
+
+.button a:link{
+  color:rgb(255, 255, 255);
+  
+}
+
+.button a:visited{
+  color:rgb(255, 255, 255);
+  
+}
+
+.button a:hover{
+  color:rgb(0, 0, 0);
+  background-color: white;
+  
+}
+
+.button a:active{
+  color:rgb(0, 0, 0);
+
 }
 
 /* FOOTER */
 
 footer{
-  padding: 10rem 1.5rem 3rem 1.5rem;
+  padding: 3rem 0rem;
   color:rgb(0, 0, 0);
+  margin-top: auto;
+  width:100%;
+  bottom: 0;
+  left:0;
+
 }
 
 footer ul{
@@ -139,6 +178,12 @@ footer ul{
   flex-direction: row;
   justify-content: space-evenly;
 }
+
+footer img{
+  width:6rem;
+}
+
+
 
 /* Footer Link Styling */
 footer a{
@@ -218,7 +263,7 @@ footer a:active{
 }
 
 #credits a:hover{
-  background-image: url("gif/MovieCredits.gif");
+  background-image: url("gif/smallScreen/MovieCredits.gif");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -230,7 +275,7 @@ footer a:active{
 }
 
 #head a:hover{
-  background-image: url("gif/Head_Gif.gif");
+  background-image: url("gif/smallScreen/Head_Gif.gif");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -241,7 +286,7 @@ footer a:active{
 }
 
 #arcade a:hover{
-  background-image: url("gif/Arcade_Gif.gif");
+  background-image: url("gif/smallScreen/Arcade_Gif.gif");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -253,7 +298,7 @@ footer a:active{
 }
 
 #greet a:hover{
-  background-image: url("gif/Greetings_Gif.gif");
+  background-image: url("gif/smallScreen/Greetings_Gif.gif");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -261,7 +306,7 @@ footer a:active{
 
 /* Illustration Thumnails */
 #fest a{
-  background-image: url("img/KaijuFest_Thumbnail.png");
+  background-image: url("img/smallScreen/KaijuFest_Thumbnail.png");
   background-position: center;
 }
 
@@ -289,7 +334,6 @@ footer a:active{
   .imageText{
     left: 1.5rem;
     bottom: .25rem;
-    
   }
 
 
@@ -307,16 +351,19 @@ footer a:active{
   }
   
   .about{
-    background-color: rgb(182, 182, 182);
-    padding: 10rem 0rem;
+
+    text-align: center;
     align-items: center;
-    margin-bottom: 5rem;
+    display: flex;
+    background-color: rgb(182, 182, 182);
+    justify-content: space-evenly;
+    
     
   }
   
   #aboutText{
-    padding: 0 5rem 0rem 35rem;
-      text-align: center;
+    padding: 15rem 0rem;
+    
   }
   
   .portfolio{
@@ -333,6 +380,46 @@ footer a:active{
  
 }
 
+
+/* MAC(Large) Screen Size */
+@media screen and (min-width:75rem){
+    .container img{
+      height:50%;
+    }
+
+    .imageText{
+      left: 2.5rem;
+      bottom: .25rem;
+    }
+
+    .left{
+      padding:2rem;
+    }
+
+    .left img{
+      width:50rem;
+    }
+
+    .about{
+      
+    }
+
+    .about h1{
+      font-size: 9rem;
+    }
+
+    .about p{
+      font-size: 1.5rem;
+    }
+
+  
+
+    footer{
+      
+      font-size: 1.5rem;
+    }
+
+}
 
 
 /* Retina Display 
