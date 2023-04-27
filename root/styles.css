@@ -176,11 +176,12 @@ footer ul{
   margin-bottom: 2rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 footer img{
-  width:6rem;
+  margin: 0 1rem;
+  width:3rem;
 }
 
 
@@ -346,7 +347,6 @@ footer a:active{
   
   .left img{
     width: 27.25rem;
-    
     margin: auto;
   }
   
@@ -362,7 +362,7 @@ footer a:active{
   }
   
   #aboutText{
-    padding: 15rem 0rem;
+    padding: 10rem 0rem;
     
   }
   
@@ -382,7 +382,7 @@ footer a:active{
 
 
 /* MAC(Large) Screen Size */
-@media screen and (min-width:75rem){
+@media screen and (min-width:100rem){
     .container img{
       height:50%;
     }
