@@ -16,6 +16,13 @@ section p{
     width: 45rem;
 }
 
+.series{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    width: 35%;
+  }
+
 h1{
     font-size: 3rem;
     padding-bottom: 1rem;
@@ -23,6 +30,10 @@ h1{
 
 h2{
     font-size: 2.5rem;
+}
+#subheading{
+    font-weight: 900;
+    font-size: 1.25rem;
 }
 
 .process{

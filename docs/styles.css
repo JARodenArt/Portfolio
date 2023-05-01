@@ -52,8 +52,17 @@ main{
 
 .center{
   text-align: center;
+}
+
+#place{
+  text-align: center;
+  margin-top: 10rem;
+}
+
+#place p{
   
-  
+  margin-top: 5rem;
+  font-size: 2rem;
 }
 
 
@@ -113,12 +122,6 @@ div{
 
 /* Section End */
 
-.series{
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-evenly;
-  width: 25%;
-}
 
 .button{
   
@@ -168,6 +171,7 @@ footer{
   width:100%;
   bottom: 0;
   left:0;
+  
 
 }
 
@@ -305,6 +309,28 @@ footer a:active{
   background-position: center;
 }
 
+#series a:hover img{
+  visibility: hidden;
+}
+
+#series a:hover{
+  background-image: url("gif/smallScreen/Series.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#panic a:hover img{
+  visibility: hidden;
+}
+
+#panic a:hover{
+  background-image: url("gif/smallScreen/OpossumPanic.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 /* Illustration Thumnails */
 #fest a{
   background-image: url("img/smallScreen/KaijuFest_Thumbnail.png");
@@ -335,7 +361,9 @@ footer a:active{
   .imageText{
     left: 1.5rem;
     bottom: .25rem;
+    font-size: 3rem;
   }
+
 
 
   .left{
@@ -387,9 +415,11 @@ footer a:active{
     }
 
     .imageText{
-      left: 2.5rem;
-      bottom: .25rem;
+      left:4rem;
+      bottom: 1rem;
     }
+
+
 
     .left{
       padding:2rem;

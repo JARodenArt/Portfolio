@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <html>
     <head>
         <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="about.css">
         <link rel="stylesheet" href="nav.css">
+        <link rel="stylesheet" href="content.css">
         <link rel="stylesheet" href="https://use.typekit.net/cpf7zxs.css">
 
         <script src="myscripts.js"></script>
 
         <link rel="icon" href="Icons/Tab_Icon.png">
-        <title>Jacob Roden - About</title>
+        <title>Jacob Roden - Buckaroo Banzai</title>
         
     </head>
 
@@ -20,17 +21,16 @@
             <nav>
                 <div class="navbar">
 
-                    <div></div>
+                    <div>
                     <a href="index.html" class="active">Jacob Roden</a>
 
-                    <div class="horizontal" id="myTopnav">
+                    <ul class="horizontal" id="myTopnav">
                         
-                        <div><a href="portfolio.html">Portfolio</a></div>
+                        <li><a href="portfolio.html">Portfolio</a></li>
                         <li><a href="404.html">Commisions</a></li>
                         <li><a href="about.html">About</a></li>
                         
-                    </div>
-
+                    </ul>
                 </div>
                 
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
@@ -42,24 +42,32 @@
 
     <body>
         <main>
-            
-            <section class="bio">
-                <img class="profile" src="img/About_TestIMG.jpg" alt="me">
+            <div>
+                <iframe src="https://youtube.com/embed/v5NcHURqTJg" title="Opossum Panic Demo"></iframe>
                 
-                <div>
-                    <h1>Jacob Roden</h1>
-                    <p>I'm from Weedsport, a small town in Central New York. I've been interested in 80s movies ever since I can remember which has influenced my art and hobbies, as I collect VHS tapes. </p>  
+            </div>
 
-                    <h2>Artist Statement</h2>
-                    <p>Ever since the first time seeing computer-generated images used for special effects and animations in movies I knew I wanted to be a designer. I wasn’t able to work in 3D programs until high school,  once I did I went beyond the class and did a lot of self-study. I create 3D models and use illustrations as a means of support by showing my design process. I like to take influences from different decades and use current styles and techniques to create interesting scenes. </p>
-                </div>
+            <section>
+                <h1>Opossum Panic: Proof of Concept</h1>
                 
+                <h2>2023</h2>
+
+                <p id="subheading">Unity, Blender</p>
+
+                <p>I've been planning to create my own video game for a while and this a small portion of gameplay from a proof concept I created
+                    in a class. I created all the models and assets in Blender, and made the textures in Photoshop. I plan and are currently making a improvements
+                    and expanding the gameplay and hope to have a playable demo in a year or so.
+                </p>
+            </section>
+            
+            <section class="process">
+                <h2>Sketches</h2>
+                <div class="processContent">
+                    
+                    </div>
                 
             </section>
-
-            
-            <a href="img/Roden_J_Resume_Revised.pdf"> <img class="resume" src="img/Roden_J_Resume.jpg"></a>
-            
+  
         </main>
 
         <footer>
@@ -70,7 +78,7 @@
             </ul>
             <p class="center">© 2023 Jacob Roden</p>
         </footer>
-    
     </body>
+
 
 </html>
