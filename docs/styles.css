@@ -162,61 +162,7 @@ div{
 
 }
 
-/* FOOTER */
 
-footer{
-  padding: 3rem 0rem;
-  color:rgb(0, 0, 0);
-  margin-top: auto;
-  width:100%;
-  bottom: 0;
-  left:0;
-  
-
-}
-
-footer ul{
-  list-style: none;
-  margin-bottom: 2rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-footer img{
-  margin: 0 1rem;
-  width:3rem;
-}
-
-
-
-/* Footer Link Styling */
-footer a{
-  color:rgb(0, 0, 0);
-  text-decoration: none;
-}
-
-footer a:link{
-  color:rgb(0, 0, 0);
-  
-}
-
-footer a:visited{
-  color:rgb(0, 0, 0);
-  
-}
-
-footer a:hover{
-  color:rgb(0, 0, 0);
-  
-}
-
-footer a:active{
-  color:rgb(0, 0, 0);
-
-}
-
-/* SECTION ENDS */
 
 
 
@@ -263,79 +209,6 @@ footer a:active{
   /* 3D Thumbnails */
 
 
-#credits a:hover img{
-  visibility: hidden;
-}
-
-#credits a:hover{
-  background-image: url("gif/smallScreen/MovieCredits.gif");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  
-}
-
-#head a:hover img{
-  visibility: hidden;
-}
-
-#head a:hover{
-  background-image: url("gif/smallScreen/Head_Gif.gif");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-#arcade a:hover img{
-  visibility: hidden;
-}
-
-#arcade a:hover{
-  background-image: url("gif/smallScreen/Arcade_Gif.gif");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  
-}
-
-#greet a:hover img{
-  visibility: hidden;
-}
-
-#greet a:hover{
-  background-image: url("gif/smallScreen/Greetings_Gif.gif");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-#series a:hover img{
-  visibility: hidden;
-}
-
-#series a:hover{
-  background-image: url("gif/smallScreen/Series.gif");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-#panic a:hover img{
-  visibility: hidden;
-}
-
-#panic a:hover{
-  background-image: url("gif/smallScreen/OpossumPanic.gif");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-/* Illustration Thumnails */
-#fest a{
-  background-image: url("img/smallScreen/KaijuFest_Thumbnail.png");
-  background-position: center;
-}
 
 .container div a:hover .imageText{
   transition: all .2s ease-in-out;
