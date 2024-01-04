@@ -8,9 +8,9 @@
   .grid-container{
     display: grid;
     grid-template-columns: auto auto auto;
-    padding: 1rem 3rem;
+    padding: 2rem 3rem;
     gap: 1rem;
-    justify-content: space-evenly;
+    justify-content: center;
   }
 
   .grid-item {
@@ -101,6 +101,7 @@
 
 /* SECTION END */
 
+/* RETINA DISPLAY */
 @media only screen and (min--moz-device-pixel-ratio: 2),
 only screen and (-o-min-device-pixel-ratio: 2/1),
 only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -164,3 +165,4 @@ only screen and (min-device-pixel-ratio: 2){
 
 
 }
+/* SECTION ENDS */
