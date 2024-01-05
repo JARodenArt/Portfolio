@@ -1,5 +1,12 @@
 
 
+@media only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2){
+
+
+}
 
 /* --- Phone Screen Size --- */
 @media screen and (max-width:37.5rem) {
@@ -22,17 +29,22 @@
      
      }
 
+     .bio h1{
+      display: flex;
+      justify-content: center;
+     }
+
      .resume{
-      padding-top: 5rem;
+      padding-top: 2rem;
       display: block;
-      width:30rem;
+      width:20rem;
       margin:0 auto;
     }
 
      
 
      h1{
-        font-size: 4rem;
+        font-size: 2.5rem;
         align-self:center;
         margin: auto;
         margin: 0 auto;
@@ -40,8 +52,8 @@
      }
 
     div p{
-        margin: 0 auto;
-        width:25rem;
+        margin: 1rem auto;
+        width:20rem;
     }
 
     
