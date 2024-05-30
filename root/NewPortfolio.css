@@ -8,18 +8,29 @@
   .grid-container{
     display: grid;
     grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
     padding: 2rem 3rem;
     gap: 1rem;
     justify-content: center;
   }
 
   .grid-item {
+    display: grid;
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
     font-size: 5rem;
     text-align: center;
    
   }
+
+
+  #long{
+    grid-area: 1 / 1 / 2 / 3;
+  }
+
+  
+
+
 
   /* H2 Image Text*/
 .grid-container h2{
@@ -39,8 +50,7 @@
 
 /* LINK BOX SIZE */
   .grid-container div{
-    width: 20rem;
-    height: 20rem;
+
   }
 
   .grid-container{
@@ -75,14 +85,16 @@
 /* SECTION END */
 
 /* LINK IMAGE AND BACKGROUND IMAGES */
+    #long img{
+      width: 45.3rem;
+    }
     img{
- 
+    width: 25.5rem;
+    height: 100%;
   }
 
   .grid-container img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    object-fit: scale-down;
     position: relative;
     z-index: 1;
     
