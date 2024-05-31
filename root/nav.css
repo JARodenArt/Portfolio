@@ -284,4 +284,14 @@ only screen and (min-device-pixel-ratio: 2){
     font-size: 1.75rem;
   }
 
+  
+/* NAVBAR COLOR */
+  .navbar{
+    background-color: rgb(196, 206, 241);
+  }
+
+  .horizontal{
+    background-color: rgb(196, 206, 241);
+  }
+
 }
