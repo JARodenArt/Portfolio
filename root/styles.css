@@ -75,6 +75,14 @@ div{
   height: min-content;
 }
 
+/* FORM */
+form{
+  margin: 0 auto;
+}
+
+form div{
+  padding: 2rem
+}
 
 
 /* H2 Image Text*/
