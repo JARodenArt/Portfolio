@@ -78,10 +78,20 @@ div{
 /* FORM */
 form{
   margin: 0 auto;
+ 
 }
 
 form div{
-  padding: 2rem
+  padding: 1rem
+}
+
+form textarea{
+  width: 20rem;
+  height: 9rem;
+}
+
+form input{
+  width: 20rem;
 }
 
 

@@ -8,4 +8,15 @@ function myFunction() {
     }
 
   }
+
+
+function sendMail(){
+  let parms = {
+    from_name : document.getElementById("name").value,
+    subject : document.getElementById("subject").value,
+    message : document.getElementById("message").value,
+  }
+
+  emailjs.send("service_pc36k5i","template_bfyie4a",parms).then(alert("Email Sent"))
+}
   
