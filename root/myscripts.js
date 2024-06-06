@@ -11,12 +11,14 @@ function myFunction() {
 
 
 function sendMail(){
-  let parms = {
+  let params = {
     from_name : document.getElementById("from_name").value,
     subject : document.getElementById("subject").value,
     message : document.getElementById("message").value,
   }
 
-  emailjs.send("service_pc36k5i","template_bfyie4a",parms)
+  emailjs.send("service_pc36k5i","template_bfyie4a", params).then(function (res){
+    alert("Success! " + res.status);
+  })
 }
   
