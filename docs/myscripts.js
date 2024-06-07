@@ -21,4 +21,8 @@ function sendMail(){
     alert("Success! " + res.status);
   })
 }
+
+const form =
+document.getElementById("myform");
+form.addEventListener("submit", sendMail);
   
