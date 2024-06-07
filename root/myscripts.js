@@ -8,7 +8,12 @@ function myFunction() {
     }
 
   }
-
+  
+  function(){
+    emailjs.init({
+        publicKey: "SNm5LIi2RybORaRvv",
+    });
+}
 
 function sendMail(){
   let params = {
