@@ -78,16 +78,16 @@ div{
 /* FORM */
 form{
   margin: 0 auto;
- 
+ width: 20rem;
 }
 
 form div{
   padding: 1rem
 }
 
-form textarea{
-  width: 20rem;
-  height: 9rem;
+label{
+  display: flex;
+  
 }
 
 form input{
