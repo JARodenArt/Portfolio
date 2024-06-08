@@ -14,18 +14,9 @@
 
         <script src="myscripts.js"></script>
 
-<!-- Script for EMAILJS-->
-        <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-        </script>
+<!-- Script for WEB3-->
+    <script src="https://web3forms.com/client/script.js" async defer></script>
 
-        <script type="text/javascript">
-            (function(){
-                emailjs.init({
-                publicKey: "SNm5LIi2RybORaRvv",
-                });
-            })();
-        </script>
 
 
         
@@ -68,7 +59,9 @@
             <h1 class="center">Commisions</h1>
 
 
-            <form class="center" id="myForm" method="post">
+            <form class="center" action="https://api.web3forms.com/submit" id="myForm" method="POST">
+
+                <input type="hidden" name="access_key" value="ac2c57b8-95ea-4269-b10f-e1dc82541915">
                 
                 <div>
                     <label for="from_name">Name:</label>
