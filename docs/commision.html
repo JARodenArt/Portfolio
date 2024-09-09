@@ -74,16 +74,13 @@
                 </div>
 
                 <div>
-                    <label for="subject">Subject:</label>
-                    <input type="text" id="subject" name="subject" required>
+                    <label for="message">Message:</label>
+                    <textarea rows="5" id="message" name="message" required></textarea>
                 </div>
 
-                <div>
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
+                <div class="h-captcha" data-captcha="true"></div>
            
-            <button type="submit">Send</button>
+                <button type="submit">Send</button>
             </form>
              
            
